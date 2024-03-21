@@ -124,13 +124,13 @@
      *  2. 获取当前时间字符串
      *       Sugar.Date.now2str("yyyy-MM", "UTC+7");  -> 2024-03
      *  3. 时间字符串计算(获取去年的字符串)
-     *       Sugar.Date.strPlusYears("2024-03-20","yyyy-MM-dd", -1L)  -> 2023-03-20
+     *       Sugar.Date.strPlusYears("2024-03-20","yyyy-MM-dd", -1)  -> 2023-03-20
      *  4. 时间字符串重新格式化
      *       Sugar.Date.str2str("2024-03-20 14:52:51", "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm:ss", "UTC+8", "UTC+7")
      *            -> 2024-01-20 14:52:51
      *  5. 链式用法
      *       Sugar.Date.parse("2024-03-20 14:52:51").toTs()  -> 1710917571000
-     *       Sugar.Date.setZone("UTC+8").setFormat("yyyy-MM-dd-").parse("2024-03-20-").toPlusDays(12L).toStr()
+     *       Sugar.Date.setZone("UTC+8").setFormat("yyyy-MM-dd-").parse("2024-03-20-").toPlusDays(12).toStr()
      *            -> 2024-04-01-
      */
 ```
